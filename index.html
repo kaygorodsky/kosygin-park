@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Косыгин Парк</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="asstes/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asstes/css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="asstes/css/main.css">
+    <link rel="shortcut icon" href="asstes/img/ico/logo-color.png" />
+</head>
+
+<body>
+    <header class="intro d-flex flex-column">
+        <!--<video class="intro-video" src="asstes/img/intro.mp4" autoplay loop muted></video>-->
+        <!--<div class="overlay">-->
+            <nav id="main-navbar" class="navbar navbar-dark px-2 px-sm-5 py-sm-3 fixed-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand me-lg-auto mx-lg-4" href="/"><div id="navbar-logo" class="navbar-logo"></div></a>
+                    <div class="d-none d-lg-flex">
+                        <div class="d-flex align-items-center">
+                            <!--<div class="pe-5"><a href=""><img src="asstes/img/ico/search.svg" alt=""></a></div>-->
+                            <div class="container-search">
+                                <input checked="" class="checkbox" type="checkbox">
+                                <div class="mainbox">
+                                    <div class="iconContainer">
+                                        <!--<svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"
+                                            class="search_icon">
+                                            <path
+                                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                            </path>
+                                        </svg>-->
+                                        <!--<img src="asstes/img/ico/search-icon-white.svg" alt="">-->
+                                        <div id="search-icon" class="search-icon"></div>
+                                    </div>
+                                    <input id="search-form" input type="text submit" class="search_input" placeholder="Поиск" onchange="location.href='../search.html'">
+                                </div>
+                            </div>
+                            <a href="tel:+74958110101" class="px-5">+7 (495) 811-01-01</a>
+                            <p class="pe-5">Доб. 1647</p>
+                        </div>
+                        <div><button class="btn-prop py-2 px-4" style="font-weight: 700;" onclick="location.href='../events.html'">Мероприятия</button>
+                        </div>
+                    </div>
+        
+                    <div class="offcanvas offcanvas-start text-bg-dark px-md-4 px-3" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header pt-5" style="height: auto">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" href="/">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="courses.html">Наши курсы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="events.html">Мероприятия</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Расписание мероприятий</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Расписание образовательных<br>программ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Преподаватели</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Для абитуриентов</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Наш вуз</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Вопросы и ответы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Документы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container py-5 mt-auto"">
+                <div class="py-5">
+                    <h1>косыгин-парк</h1>
+                    <p class="pt-2" style="line-height: 1.2">Технопарк<br>креативных индустрий</p>
+                    <div class="pt-4">
+                        <button class="btn-prop py-3 px-5" onclick="location.href='../courses.html'">
+                            ЗАПИСАТЬСЯ НА КУРС
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <!--</div>-->
+    </header>
+
+    <section class="bg py-4 py-lg-5">
+        <div class="container py-4 py-lg-5">
+            <h2>чтобы стать успешным, нужно:</h2>
+            <div class="row g-4 pt-4 pt-lg-5">
+                <div class="col-sm-4" data-aos="zoom-in">
+                    <img src="asstes/img/tips-1.svg" class="img-fluid img-rounded" alt="">
+                    <h4 class="pt-4">Знать профессии будущего</h4>
+                    <p style="margin: 0;">
+                        У нас ребята знакомятся с профессиями завтрашнего дня, открывая для себя мир возможностей и карьерных перспектив:
+                    <ul class="ul-tips">
+                        <li>Дизайн игр и развлекательных приложений;</li>
+                        <li>Аддитивные технологии;</li>
+                        <li>Искусственный интеллект и машинное обучение;</li>
+                        <li>Создание высокотехнологичной одежды;</li>
+                        <li>Моделирование и решение инженерно-экологических задач.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="zoom-in">
+                    <img src="asstes/img/tips-2.svg" class="img-fluid img-rounded" alt="">
+                    <h4 class="pt-4">Найти себя</h4>
+                    <p style="margin: 0;">
+                        Помните, что не существует правильного или неправильного ответа в поиске себя. Пробуйте новые занятия,
+                        экспериментируйте, задавайте вопросы. Возможно, вы обнаружите в себе скрытые таланты в робототехнике,
+                        программировании, дизайне или живописи.
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="zoom-in">
+                    <img src="asstes/img/tips-3.svg" class="img-fluid img-rounded" alt="">
+                    <h4 class="pt-4">Иметь навыки</h4>
+                    <p style="margin: 0;">
+                        В нашем технопарке вы можете развить навыки, которые помогут вам, в дальнейшей жизни, добиться успеха:
+                        <ul class="ul-tips">
+                            <li>Владение графическими программами;</li>
+                            <li>Программирование C++, Python, Scratch;</li>
+                            <li>Финансовая грамотность;</li>
+                            <li>Ориентирование в мире моды;</li>
+                            <li>Формирование экологической культуры.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="e-bg py-4 py-lg-5">
+        <div class="container py-4 py-lg-5">
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h3>Профориентационные мероприятия в «Косыгин парке»</h3>
+                    <p class="pt-4" style="margin: 0;">
+                        Профориентационные мероприятия для школьников играют ключевую роль в их будущем. Вот почему они важны:
+                        <ul class="ul-prof py-3" style="margin: 0;">   
+                            <li>
+                                Ориентация в мире профессий: <span style="font-weight: 400;">Профориентационные мероприятия помогают школьникам увидеть широкий спектр профессий и понять, какие навыки и образование необходимы для достижения успеха в конкретной области.</span>
+                            </li>
+                            <li>
+                                Самоопределение: <span style="font-weight: 400;">Профориентационные мероприятия помогают детям лучше понять свои интересы, способности и ценности, что в свою очередь способствует более осознанному выбору будущей профессии.</span>
+                            </li>
+                            <li>
+                                Практический опыт и знакомство с реальными условиями работы: <span style="font-weight: 400;">Это помогает им лучше понять, соответствует ли конкретная профессия их ожиданиям и интересам.</span>
+                            </li>
+                            <li>
+                                Сокращение вероятности непродуктивного времени после школы: <span style="font-weight: 400;">Хорошая профориентация помогает предотвратить ситуацию, когда выпускники школы без плана и целей теряют время на поиски своего места в мире, что может привести к длительной периоду неуверенности и нестабильности.</span>
+                            </li>                   
+                        </ul> 
+                        В целом, профориентационные мероприятия помогают школьникам принять обоснованные решения относительно своей будущей карьеры и способствуют развитию их самоопределения, уверенности в себе и успешной адаптации в мире труда.
+                    </p>
+                </div>
+                <div class="col-lg-6 d-flex flex-column" data-aos="fade-up">
+                    <img src="asstes/img/proforient.svg" class="img-fluid img-rounded" alt="">
+                    <div style="width: 100%;">
+                        <div class="pt-4">
+                            <button class="btn-prop py-3" style="width: 100%;" onclick="location.href='../events.html'">
+                                <h3 style="font-weight: 600;">Текущие мероприятия</h3>
+                            </button>
+                        </div>
+                        <div class="pt-4">
+                            <button class="e-btn-prop py-3" style="width: 100%;" onclick="location.href='../last-events.html'">
+                                <h3 style="font-weight: 600;">Прошедшие мероприятия</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg py-4 py-lg-5">
+        <div class="container py-4 py-lg-5">
+            <h3>Наши курсы</h3>
+            <div class="row g-4 g-lg-5 pt-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <img src="asstes/img/courses-1.svg" class="img-fluid img-rounded" alt="">
+                    <div class="mt-auto pt-4" style="width: 100%;">
+                        <button class="btn btn-primary e-btn-prop py-3" style="width: 100%;" onclick="location.href='../courses.html'"><h3 style="font-weight: 600;">Записаться на курс</h3></button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column" data-aos="fade-up">
+                    <p> 
+                        Мы предлагаем образовательные программы для школьников, разработанные на кафедрах «РГУ им. А.Н. Косыгина», которые охватывают широкий спектр областей: от программирования и робототехники до дизайна одежды и экологии. Это позволяет каждому школьнику найти что‑то интересное и подходящее. 
+                        <br><br>
+                        Акцентируем внимание на проектной работе и практических заданиях, что помогает учащимся применить полученные знания на практике и усвоить их более глубоко, а также познакомиться с направлениями подготовки на кафедрах ВУЗа и выбрать дальнейшую траекторию своего образования.
+                        <br><br>
+                        Наши курсы помогают школьникам развить ключевые навыки, которые будут им полезны в любой сфере жизни: коммуникацию, сотрудничество, управление временем и ресурсами, а также умение решать проблемы и адаптироваться к изменениям.                    </p>
+                    <!--<div class="mt-auto pt-4" style="width: 100%;">
+                        <button class="btn btn-primary e-btn-prop py-3" style="width: 100%;" onclick="location.href='../courses.html'"><h3 style="font-weight: 600;">Записаться на курс</h3></button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="e-bg py-4 py-lg-5">
+        <div class="container py-4 py-lg-5">
+            <h2>наши преимущества</h2>
+            <div id="task" class="row g-4 g-lg-5 pt-4 pt-lg-5">
+                <div class="col-sm-6" data-aos="zoom-in-up">
+                    <div class="card-style shadow-sm">
+                        <div class="py-5 px-4">
+                            <img src="asstes/img/ico/cloud.svg" class="img-fluid card-ico" alt="">
+                            <h5 class="card-header pt-4">Высокий уровень специалистов</h5>
+                            <p class="card-des pt-3">Программы и мероприятия технопарка проводят действующие преподаватели «РГУ им. А.Н. Косыгина».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="zoom-in-up">
+                    <div class="card-style shadow-sm">
+                        <div class="py-5 px-4">
+                            <img src="asstes/img/ico/cloud.svg" class="img-fluid card-ico" alt="">
+                            <h5 class="card-header pt-4">Индивидуальный подход</h5>
+                            <p class="card-des pt-3">Предлагаем индивидуальный подход 
+                                к каждому ученику, учитывая его интересы, уровень знаний и потребности, чтобы обеспечить максимально эффективное обучение.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="zoom-in-up">
+                    <div class="card-style shadow-sm">
+                        <div class="py-5 px-4">
+                            <img src="asstes/img/ico/cloud.svg" class="img-fluid card-ico" alt="">
+                            <h5 class="card-header pt-4">Знаем перспективные профессии</h5>
+                            <p class="card-des pt-3">Отслеживаем тренды в различных отраслях и знаем перспективные профессии. Поможем вам найти свою профессию будущего.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="zoom-in-up">
+                    <div class="card-style shadow-sm">
+                        <div class="py-5 px-4">
+                            <img src="asstes/img/ico/cloud.svg" class="img-fluid card-ico" alt="">
+                            <h5 class="card-header pt-4">Интеграция школьников в ВУЗ</h5>
+                            <p class="card-des pt-3">Хотите поближе познакомиться с кафедрами «РГУ им. А.Н. Косыгина» - приходите к нам в технопарк. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg py-5">
+        <div class="container py-5">
+            <h2>наши преподаватели</h2>
+            <div class="pt-4 pt-lg-5" data-aos="fade-up">
+                <div id="tutor" class="owl-carousel owl-theme owl-carousel-tutors">
+                    <button class="card-button" onclick="location.href='../tutor.html'">
+                        <div class="card-style shadow-sm">
+                            <div class="px-3 py-4">
+                                <img src="asstes/img/angelina.svg" class="img-fluid tutor-ico" alt="">
+                                <h5 class="tutor-header pt-4">Ангелина Верховская</h5>
+                                <p class="tutor-des pt-2">
+                                    Ведет курсы «Шьем гардероб для Barbie», «Арт-проектирование сумок 
+                                    и аксессуаров».                                     
+                                </p>
+                                <p class="tutor-des pt-2">
+                                    <span style="font-weight: 900;">О себе:</span> разрабатывает афиши
+                                    для Сбера, знает всё о графическом дизайне
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="e-bg py-5">
+        <div class="container py-5">
+            <h2>отзывы о косыгин парке</h2>
+            <div class="pt-4 pt-lg-5" data-aos="fade-up">
+                <div class="owl-carousel owl-theme owl-carousel-reviews">
+                    <div class="item">
+                        <div class="card-style p-0" style="max-height: 350px;">
+                            <div class="youtube" id="bNkQxtX7PqY" style="width:100%; max-width: 100%; height: 350px; border-radius: 30px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg py-5">
+        <div class="container py-5">
+            <h2>часто задаваемые вопросы</h2>
+            <div class="pt-4 pt-lg-5">
+                <div class="accordion accordion-flush accordion-style" id="accordionFlushExample">
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Какова структура программ обучения в вашем технопарке?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Структура программ обучения в нашем технопарке разработана с учетом интересов и потребностей детей различных возрастных категорий. Мы предлагаем широкий спектр курсов и мастер-классов по таким сферам, как программирование, робототехника, дизайн, инжиниринг и другие. Программы разделены на уровни сложности, начиная с основ и постепенно переходя к более продвинутым темам, чтобы каждый ребенок мог находиться на своем уровне и развиваться по мере своих способностей. Мы также предлагаем индивидуальные и групповые занятия, чтобы обеспечить максимально эффективное обучение для каждого участника нашего технопарка.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Какие возрастные категории охватывают ваши курсы?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                                filled with some actual content.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Есть ли возможность индивидуального подхода к каждому ученику?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Каковы возможности для участия в конкурсах, выставках и других мероприятиях после обучения в вашем технопарке?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Какова поддержка для детей, желающих продолжить свое образование или карьеру в выбранной области после окончания курсов?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                Как долго длится каждый курс или мастер-класс?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Как часто проводятся курсы и мастер-классы?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at least at first
+                                glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="e-bg py-4 py-lg-5">
+        <div class="container py-4 py-lg-5">
+            <h2>как до нас добраться</h2>
+            <div class="row py-4 py-lg-5">
+                <div class="col-12 col-lg-4" data-aos="zoom-in-up">
+                    <h4 class="text-center text-sm-start pb-2">Как пройти:</h4>
+                    <div class="map">
+                        <div class="img-rounded" style="overflow: hidden; height: 80%;">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?ll=37.605207%2C55.719177&mode=routes&rtext=55.720467%2C37.601494~55.718819%2C37.607933&rtt=pd&ruri=ymapsbm1%3A%2F%2Forg%3Foid%3D52355285010~ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstation__9858945&z=17.2" width="100%" height="100%" frameborder="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4" data-aos="zoom-in-up">
+                    <h4 class="text-center text-sm-start pb-2">Внутренний двор:</h4>
+                    <div class="map">
+                       <div class="img-rounded" style="overflow: hidden; height: 80%;">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?ll=37.602843%2C55.720009&mode=routes&rtext=55.719857%2C37.603133~55.720233%2C37.602053&rtt=pd&ruri=~&z=18.76" width="100%" height="100%" frameborder="0" allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4" data-aos="fade-up">
+                    <h5 class="text-center text-sm-start pb-2">Будем рады ответить на ваши вопросы</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur. In mattis id tempus augue vitae. Hendrerit sit urna aliquam lectus. Aliquam euismod vestibulum morbi viverra morbi quam. Aliquam bibendum et lectus fusce id velit. Eu viverra.</p>
+                    <ul class="pt-4">
+                        <li class="d-flex">
+                            <img src="asstes/img/ico/geo.png" class="img-fluid geo-ico" alt="">
+                            <div class="ps-3">
+                                <h5 style="margin-bottom: .25rem;">Время работы:</h5>
+                                <p style="margin: 0">Будние дни, 10:00—18:00</p>
+                            </div>
+                        </li>
+                        <li class="d-flex py-3">
+                            <img src="asstes/img/ico/geo.png" class="img-fluid geo-ico" alt="">
+                            <div class="ps-3">
+                                <h5 style="margin-bottom: .25rem;">Адрес:</h5>
+                                <p style="margin: 0">Ул. Малая Калужская, д. 1</p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <img src="asstes/img/ico/geo.png" class="img-fluid geo-ico" alt="">
+                            <div class="ps-3">
+                                <h5 style="margin-bottom: .25rem;">Почта:</h5>
+                                <p style="margin: 0">dt@rguk.ru</p>
+                            </div>
+                        </li>
+                        <li class="d-flex py-3">
+                            <img src="asstes/img/ico/geo.png" class="img-fluid geo-ico" alt="">
+                            <div class="ps-3">
+                                <h5 style="margin-bottom: .25rem;">Телефон:</h5>
+                                <p style="margin: 0">+7 (495) 811-01-01 (Доб. 1647)</p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <img src="asstes/img/ico/geo.png" class="img-fluid geo-ico" alt="">
+                            <div class="ps-3">
+                                <h5 style="margin-bottom: .25rem;">Метро:</h5>
+                                <p style="margin: 0">Шаболовская</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--<h5 class="text-center text-lg-start pb-2">Мы в соцсетях:</h5>
+                    <div class="row d-flex justify-content-center justify-content-lg-start">
+                        <div class="col-2">
+                            <a href=""><img src="asstes/img/ico/tg.svg" alt=""></a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href=""><img src="asstes/img/ico/wa.svg" alt=""></a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <a href=""><img src="asstes/img/ico/mr.svg" alt=""></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="f-bg">
+        <div class="container py-5 d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
+            <div>
+                <ul class="d-flex" style="margin: 0;">
+                    <li class="pe-4 pe-md-5"><a href="">О нас</a></li>
+                    <li class="pe-4 pe-md-5"><a href="">Контакты</a></li>
+                    <li class="pe-4 pe-md-5"><a href="">Курсы</a></li>
+                    <li><a href="">Мероприятия</a></li>
+                </ul>
+            </div>
+            <div class="pt-4 pt-md-0">
+                <ul class="d-flex align-items-center" style="margin: 0;">
+                    <li class="pe-2 pe-md-3"><img src="asstes/img/ico/vk.svg" alt=""></li>
+                    <li class="pe-2 pe-md-3"><img src="asstes/img/ico/tg.svg" alt=""></li>
+                    <li class="pe-2 pe-md-3"><img src="asstes/img/ico/wa.svg" alt=""></li>
+                    <li><img src="asstes/img/ico/mr.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="asstes/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="asstes/js/main.js"></script>
+</body>
+
+</html>
